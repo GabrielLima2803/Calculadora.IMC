@@ -1,0 +1,53 @@
+#main {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 100px 100px 100px 100px 100px 150px;
+    justify-items: center;
+    background-color: rgb(43, 40, 66);
+    border-radius: 30px;
+    width: 600px; 
+    box-shadow: 10px 10px 1px rgb(0, 0, 0);   
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#forms {
+    color: white;
+    margin-left: 10px;
+}
+
+#resultado {
+    grid-row: 4;
+    font-size: 25px;
+}
+#btn{
+    font-size: 28px;
+    color: white;
+    background: tomato;
+    padding: 10px;
+    margin: 3%;
+    width: 400px;
+    grid-row:5;
+}
+
+.font{
+    font-size: 25px;
+    text-align: center;
+}
+#titulo{
+    font-size: 45px;
+    color: white;
+    margin-top: 30px;
+}
+#resultado{
+    color: white;
+    grid-row: 6;
+}
+.posicao1{
+    grid-row: 2;
+}
+.posicao2{
+    grid-row: 3;
+}
