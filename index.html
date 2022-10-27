@@ -7,33 +7,34 @@
     <link rel="stylesheet" href="index.css">
     <title>Calculadora Imc</title>
 </head>
-<body>
+<body id="fundo">
     <main id="main">
         <div id="titulo">Calculadora IMC</div>
         <form id="forms">
             <br>
             <br>
-            <label class="font posicao1" for="nome">Nome:</label>
-            <input type="text" id="nome" class="posicao1">
+            <label class="font posicao1" for="nome"> Nome:</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" class="posicao1">
             <br>
             <br>
             <br>
             <br>
             <br>
             <label class="font posicao2" for="peso">Peso:</label>
-            <input type="number" id="peso" class="posicao2">
+            <input  type="number" placeholder="Digite seu peso" id="peso" class="posicao2">
             <br>
             <br>
             <br>
             <br>
             <br>
             <label class="font posicao3" for="altura">Altura:</label>
-            <input type="number" id="altura" class="posicao3">
+            <input type="number" placeholder="Digite sua altura" id="altura" class="posicao3">
         </form>
         <button id="btn" onclick="calculo_resultado()">Resultado</button>
         
     
-        <div id="resultado"></div>
+        <div class="resultadoIMC" id="resultado"></div>
+        
     </main>
     <script src="index.js"></script>
 </body>

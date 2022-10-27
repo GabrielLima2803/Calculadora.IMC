@@ -1,7 +1,7 @@
 #main {
     display: grid;
     grid-template-columns: 600px;
-    grid-template-rows: 100px 100px 100px 100px 100px 150px;
+    grid-template-rows: 100px 100px 100px 100px 100px 150px 30px;
     justify-items: center;
     background-color: rgb(43, 40, 66);
     border-radius: 30px;
@@ -12,7 +12,9 @@ body{
     display: flex;
     justify-content: center;
 }
-
+#fundo{
+    background-image: linear-gradient(100deg, black,rgb(201, 201, 201) );
+}
 #forms {
     color: white;
     margin-left: 10px;
@@ -40,14 +42,63 @@ body{
     font-size: 45px;
     color: white;
     margin-top: 30px;
+    border-bottom: 2px white;
 }
 #resultado{
-    color: white;
+    display: flex;
+    color: rgb(0, 0, 0);
     grid-row: 6;
+    margin: 7px;
+    width: 400px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .posicao1{
     grid-row: 2;
 }
 .posicao2{
     grid-row: 3;
+}
+.posicao1, .posicao2, .posicao3{
+    border-radius: 5px;
+}
+#resultadoIMC{
+    grid-row: 7;
+    color: rgb(0, 0, 0);
+    margin: 7px;
+    width: 400px;
+    font-size: 25px;
+    
+}
+.TomaCuidado{
+    background-color: red;
+}
+.MaisOuMenos{
+    color: purple;
+}
+.QuaseDeBoa{
+    background-color: brown;
+}
+.ComoTaDeBoa{
+    background-color: tomato;
+}
+.AcademiaRapá{
+    background-color: coral;
+}
+.IxiBoMalhar{
+    background-color: crimson;
+}
+.MoioOPéDoMonkey{
+    background-color: cyan;
+}
+.BoaSorteAmigo{
+    background-color: rgb(100, 43, 173);
+}
+#nome:hover, #peso:hover, #altura:hover{
+    background-color: rgb(59, 19, 112);
+    color: white;
+    transition: 0.9s;
 }
